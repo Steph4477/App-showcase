@@ -9,7 +9,7 @@ export default function Presentation() {
   
   useEffect(() => {
     const handleScroll = () => {
-        const position = window.pageYOffset;
+        const position = window.scrollY;
         const windowHeight = window.innerHeight;
         const fullHeight = document.documentElement.scrollHeight;
       

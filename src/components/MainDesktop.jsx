@@ -14,9 +14,9 @@ export default function MainDesktop() {
     <main className="main_desktop">
       {sidebarTitles.map((sidebarTitle) => (
         <div className={`main_desktop_${sidebarTitle.title.toLowerCase()}`} key={sidebarTitle.id} id={sidebarTitle.title.toLowerCase()}>
-          {sidebarTitle.title === "About" ? <About /> : <a href={`#${sidebarTitle.title.toLowerCase()}`} ></a>}
-          {sidebarTitle.title === "Portfolio" ? <Portfolio /> : <a href={`#${sidebarTitle.title.toLowerCase()}`} ></a>}
-          {sidebarTitle.title === "HomeDesk" ? <HomeDesk /> : <a href={`#${sidebarTitle.title.toLowerCase()}`} ></a>}
+          {sidebarTitle.title === "About" ? <About /> : <a href={`#${sidebarTitle.title.toLowerCase()}`} alt="bouton about" ></a>}
+          {sidebarTitle.title === "Portfolio" ? <Portfolio /> : <a href={`#${sidebarTitle.title.toLowerCase()}`} alt="bouton portfolio" ></a>}
+          {sidebarTitle.title === "HomeDesk" ? <HomeDesk /> : <a href={`#${sidebarTitle.title.toLowerCase()}`} alt="bouton accueil"></a>}
         </div>
       ))}
     </main>
