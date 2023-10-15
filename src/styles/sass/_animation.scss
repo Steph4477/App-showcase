@@ -1,0 +1,60 @@
+@keyframes apparition {
+
+  0% {
+    transform: rotateY(0deg) scale(0);
+  }
+
+  100% {
+    transform: rotateY(360deg) scale(1);
+  }
+}
+
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes roll-in-blurred-left {
+  0% {
+    transform: translateX(-1000px) rotate(-720deg);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideSkills {
+  0% {
+    transform: translateX(-1000px);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes clique {
+  0% {
+    transform: translateY(-100%);
+    
+  }
+  100% {
+    transform: translateY(0%);
+    
+  }
+}

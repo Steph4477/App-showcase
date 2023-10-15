@@ -1,0 +1,108 @@
+@import '../mixins';
+@import '../variables';
+
+
+.header {
+    margin-top: 5vh;
+
+    &_nav {
+        display: none;
+
+        @include for-tablet {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @include for-mobile {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &_contact {
+            width: 100%;
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @include for-mobile {
+                margin-top: 1vh;
+            }
+
+            &_tel {
+                display: flex;
+                @include box-shadow;
+                background: $bg-Text;
+                border: 1px solid white;
+                border-radius: 20px;
+                width: 200px;
+                justify-content: center;
+                height: 40px;
+                align-items: center;
+
+                @include for-mobile {
+                    height: 30px;
+                    width: 150px;
+                }
+
+                &:hover {
+                    @include push;
+                }
+
+                img {
+                    width: 35px;
+                }
+
+                &_icone {
+                    margin-right: 1vh;
+                }
+            }
+
+            &_mail {
+                margin-top: 2vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include box-shadow;
+                background: $bg-Text;
+                border: 1px solid white;
+                border-radius: 20px;
+                width: 200px;
+                height: 40px;
+
+                @include for-mobile {
+                    height: 30px;
+                    width: 150px;
+                }
+
+                &:hover {
+                    @include push;
+                }
+
+                &_icone {
+                    margin-right: 1vh;
+                    text-align: center;
+                    width: 30px;
+
+                    @include for-mobile {
+                        width: 28px;
+                    }
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                &_lien {
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

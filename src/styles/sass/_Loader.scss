@@ -1,0 +1,68 @@
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+
+    &_col1,
+    &_col2 {
+        position: absolute;
+        top: 0;
+
+        width: 50%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 50px solid white;
+            
+        }
+    }
+
+    &_col1 {
+        left: 100%;
+        animation: loader-expand1 2s;
+    }
+
+    &_col2 {
+        right: 100%;
+        animation: loader-expand2 2s;
+    }
+}
+
+@keyframes loader-expand1 {
+    
+    0% { 
+        left: 50%;      
+        
+    }
+    
+    80%{
+        left: 50%;
+    }
+   
+    100% {
+        left: 100%;
+        
+        
+    }
+}
+
+@keyframes loader-expand2 {
+
+    0% {
+        right: 50%;
+    }
+
+    80%{
+        right: 50%;
+    }
+    
+    100% {
+        right: 100%;  
+    }
+
+}

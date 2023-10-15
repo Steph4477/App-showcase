@@ -1,0 +1,78 @@
+.presentation_title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.word {
+    display: none;
+}
+
+.word.visible {
+    opacity: 1;
+    animation: roll-in-blurred-left 1000ms cubic-bezier(0.230, 1.000, 0.320, 1.000) infinite;
+    display: inline-block;
+    color: $blue;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 1vh;
+}
+
+ 
+
+
+.skills {
+    transition: transform 1.5s ease;
+    transform: translateY(0px);
+}
+
+.cache-container {
+    position: relative;
+}
+
+  
+  .skillsWord {
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    @include for-tablet{
+        margin-top: 5vh;
+    }
+  }
+  
+  .skillsWord div {
+    display: flex;
+    align-items: center;
+   
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+    margin:  20px 15px 0 0;
+    border-radius: 25px;
+    background-color: $bg-Text;
+    padding: 5px 30px 5px 5px;
+    @include push;
+  }
+  
+  .skillsWord img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  
+  .skillsWord strong {
+    opacity: 1;
+    transition: opacity 0.5s;
+    font-size: 18px;
+  }
+  
+  .skillsWord strong.visible {
+    opacity: 1;
+  }
+  .skillsWord div.visible {
+    opacity: 1;
+    transform: translateX(0%);
+  }

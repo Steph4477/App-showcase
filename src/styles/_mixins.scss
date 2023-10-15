@@ -1,0 +1,36 @@
+///////////////////////////////////////////////////////////////////////////
+///                         Responsive                                  ///
+///////////////////////////////////////////////////////////////////////////
+
+/* Mixin pour les styles tablette */
+@mixin for-tablet {
+    @media screen and (min-width: 587px) and (max-width: 920px) {
+        @content;
+    }
+}
+
+/* Mixin pour les styles mobile */
+@mixin for-mobile {
+    @media screen and (max-width: 586px) {
+        @content;
+    }
+}
+
+/* Mixin Box shadow */
+@mixin box-shadow {
+    box-shadow: 4px 4px 8px 4px rgb(99, 93, 93);
+}
+
+@mixin shadow-text {
+    text-shadow: 3px 3px 5px rgb(1, 65, 83);
+}
+
+@mixin push {
+    box-shadow: 1px 2px 2px 2px rgb(160, 152, 152);
+}
+@mixin light {
+    box-shadow: 1px 2px 2px 2px $blue;
+}
+@mixin light-box{
+    box-shadow: 2px 3px 2px 3px $blue;
+}

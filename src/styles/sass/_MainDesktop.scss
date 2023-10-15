@@ -1,0 +1,10 @@
+.main_desktop {
+    background-color: black;
+    @include for-tablet{
+        background-color: $bg-Cart;
+    }
+    @include for-mobile{
+        background-color: $bg-Cart;
+    }
+    
+}

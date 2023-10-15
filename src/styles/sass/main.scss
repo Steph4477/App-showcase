@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Sofia+Sans+Condensed:ital,wght@0,300;0,400;1,100;1,1000&display=swap');
+@import '../mixins';
+
+* {
+
+  box-sizing: border-box;
+  font-family: 'Sofia Sans Condensed', 'Anton', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 35px;
+
+  @include for-tablet {
+    font-size: 30px;
+  }
+
+  @include for-mobile {
+    font-size: 25px;
+  }
+}
+
+h2 {
+  font-size: 25px;
+  margin-left: 5px;
+
+  @include for-tablet {
+    font-size: 20px;
+  }
+
+  @include for-mobile {
+    font-size: 18px
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+
+  @include for-tablet {
+    font-size: 18px;
+  }
+
+  @include for-mobile {
+    font-size: 16px;
+  }
+}
+
+p {
+  font-size: 22px;
+  @include for-tablet{
+    font-size: 20px;
+  }
+  @include for-mobile{
+    font-size: 18px;
+  }
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+

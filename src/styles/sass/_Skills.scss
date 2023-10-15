@@ -1,0 +1,62 @@
+.skills {
+  
+  &_container {
+    animation: clique 1500ms ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+    width: 90%;
+
+    &_article {
+      width: 46%;
+      background-color: $bg-Text;
+      margin: 1%;
+      display: flex;
+      flex-direction: column;
+      border-radius: 25px;
+      @include push;
+
+      @include for-mobile {
+        display: none;
+      }
+
+      &_titre {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: 30px;
+      }
+
+      &_icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        animation: roll-in-blurred-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      &_icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2vh;
+
+        & img {
+          height: 50px;
+        }
+
+        & i {
+          font-size: 50px;
+        }
+
+        & p {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

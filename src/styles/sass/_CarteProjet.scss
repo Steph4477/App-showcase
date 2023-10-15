@@ -1,0 +1,221 @@
+.CardProjet{
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap; 
+    &_container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+
+.CarteProjet_container_carte {
+    display: flex;
+    justify-content: center;
+    transition: 2s ease-in-out;
+    transform-style: preserve-3d;
+    position: relative;
+    scale: 1;
+    animation: apparition 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    max-width: 250px;
+    min-width: 250px;
+    max-height: 350px;
+    min-height: 350px;
+    border-radius: 30px;
+    margin: 5vh;
+    
+    &_recto_fond {
+        @include box-shadow;
+        background: #2e2f2f;
+        border: 4px solid white;
+
+        &_image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_verso_fond {
+        @include box-shadow;
+        background: #caf8f8;
+        border: 4px solid white;
+
+        &_image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_recto,
+    &_verso {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        margin: 1vh;
+       
+        &_fond {
+            height: 100%;
+            width: 100%;
+            border-radius: 25px;
+            @include box-shadow;
+            background-color: $bg-Text;
+            overflow: hidden;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &_contenu {
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            transform: translateZ(100px); // Décalage du texte
+
+            &_article {
+               
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                
+
+                &_paragraphe {
+                    padding-top: 20px;
+                }
+            }
+
+            &_image {
+                object-fit: cover;
+                width: 100px;
+                height: 100px;
+                border: 2px solid white;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &_profil {
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.CarteProjet_container_carte_verso {
+    transform: rotateY(180deg);
+    text-align: center;
+
+    &_contenu {
+        &_titre {
+            width: 180px;
+            height: 150px;
+
+            &_h {
+                position: absolute;
+                top: 100px;
+                right: 0px;
+                font-size: 20px;
+                padding: 2px;
+                border-radius: 25px;
+                text-shadow: 3px 3px 5px rgb(1, 65, 83);
+            }
+        }
+
+        &_article {
+            &_space {
+                height: 100px;
+            }
+
+            &_button {
+                border: 3px solid white;
+                background: #2e2f2f;
+                border-radius: 20px;
+
+                &_icone {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        color: white;
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.boutons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+    &_title{
+        display: flex;
+        color: $blue;
+        align-items: center;
+    }
+    &_bouton-D{
+        display: flex;
+        color: $blue;
+        align-items: center;
+        
+    }
+    &_bouton-G{
+        display: flex;
+        color: $blue;
+        align-items: center;
+    }
+    
+}
+
+.CarteProjet_container_carte_verso_contenu_article_button:hover {
+    cursor: pointer;
+    @include box-shadow;
+    background-color: rgb(216, 120, 237);
+    perspective: 8px;
+}
+
+.CarteProjet_container_carte:hover {
+    transform: rotateY(180deg);
+    transition: 1.5s;
+
+}
+
+.icone-retourner {
+    color: white;
+}
+
+.Cardproject {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4vh;
+    margin: 0 auto;
+    width: 80%;
+
+    &_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.CarteProjet_container_carte {
+
+    margin-bottom: 10vh;
+    width: calc(30% - 100px); // même largeur pour chaque carte
+}

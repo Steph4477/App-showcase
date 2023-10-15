@@ -1,0 +1,76 @@
+@import '../mixins';
+
+.profil {
+    &_container {
+        display: none;
+        
+        @include for-tablet {
+            animation: clique 800ms ease-in-out;
+            width: 100%;
+            display: flex;
+            border-radius: 0px 0px 15px 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include for-mobile {
+            display: none;
+        }
+
+        &_carte {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 10vh;
+
+            @include for-tablet {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            @include for-mobile {
+                width: 95%;
+                margin: 0 auto;
+            }
+        }
+
+        &_description {
+            padding: 5vh;
+            width: 40%;
+
+            color: black;
+
+            @include for-tablet {
+                width: 100%;
+                margin-bottom: 5vh;
+            }
+
+            @include for-mobile {
+                width: 100%;
+                margin-bottom: 5vh;
+            }
+
+            &_p {
+                background-color: #ffffa5;
+                box-shadow: 2px 4px 6px #444;
+                transform: rotate(8deg);
+                border-bottom-right-radius: 60px 10px;
+                padding: 20px;
+
+                @include for-mobile {
+                    width: 90%;
+                    margin: 0 auto;
+                    color: black;
+                    box-shadow: 0px 0px 0px white;
+                    background-color: inherit;
+                    transform: rotate(0deg);
+                    font-size: 18px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}

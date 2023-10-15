@@ -1,0 +1,35 @@
+.tab {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_service {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 30px;
+        width: 70%;
+    }
+}
+
+.collapse_content {
+    @include for-tablet {
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        margin: 0 auto;
+    }
+
+}
+
+.collapse_content.open {
+    transition: 0.8s ease-in-out;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}

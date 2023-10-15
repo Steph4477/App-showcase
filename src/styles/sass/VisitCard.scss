@@ -1,0 +1,256 @@
+@import '../variables';
+@import '../mixins';
+
+.CarteDeVisite {
+    display: none;
+   
+    @include for-tablet{
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+    }
+
+    @include for-mobile{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &_container {
+        display: none;
+
+        @include for-tablet{
+            width: 100%;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include for-mobile {
+            margin-top: 10vh;
+            height: auto;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        &_carte {
+            display: none;
+            
+            @include for-tablet {
+                margin-top: 5vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+                transition: 2s ease-in-out;
+                transform-style: preserve-3d;
+                position: relative;
+                scale: (1);
+                animation: apparition 1s linear;
+                border-radius: 30px;
+                @include box-shadow;
+                width: 250px;
+                height: 350px;
+            }
+
+            @include for-mobile {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            transition: 2s ease-in-out;
+            transform-style: preserve-3d;
+            position: relative;
+            scale: (1);
+            animation: apparition 1s linear;
+            border-radius: 30px;
+            @include box-shadow;
+                width: 220px;
+                height: 300px;
+            }
+
+            &:hover {
+                transform: rotateY(180deg);
+                transition: 1.5s;
+            }
+
+            h1 {
+                width: 100%;
+                color: $blue;
+            }
+
+            &_recto,
+            &_verso {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                border-radius: 30px;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                transform-style: preserve-3d;
+
+                &_fond {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 25px;
+                    @include box-shadow;
+                    background-color: $bg-Text;
+                }
+
+                &_contenu {
+                    position: absolute;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    transform: translateZ(100px); // Décalage du texte
+                   
+                    &_article {
+                        font-family: Arial, Helvetica, sans-serif;
+                        text-align: center;
+
+                        &_rotate {
+                            margin-top: 50px;
+                            font-size: 30px;
+                            height: 100px;
+                            display: flex;
+                            align-items: center;
+
+                            &_icone {
+                                margin-right: 10px;
+                                width: 50px;
+                            }
+                        }
+                    }
+
+                    &_image {
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            &_recto {
+                &_contenu {
+                    display: flex;
+                    flex-direction: column;
+
+                    &_article {
+                        width: 100%;
+                        
+                        margin-top: 5vh;
+
+                        &_texte {
+                            h1 {
+                                @include shadow-text;
+                            }
+
+                            h2 {
+                                @include shadow-text;
+                            }
+                        }
+
+                        &_image {
+                            
+                            
+                            
+
+                            img {
+                                width: 80px;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        &_rotate {
+                            @include for-mobile {
+                                margin-top: 2vh;
+                                margin-bottom: 5vh;
+                            }
+
+                            &_image {
+                                img {
+                                    display: flex;
+                                    text-align: center;
+                                    width: 40px;
+
+                                    @include for-mobile {
+                                        width: 30px;
+                                    }
+                                }
+                            }
+
+                            &_txt {
+                                margin-left: 1vh;
+                                font-size: 18px;
+                                font-style: italic;
+                                font-weight: 600;
+                                text-align: center;
+                                color: black;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_verso {
+                transform: rotateY(180deg);
+                text-align: center;
+
+                &_contenu {
+                    position: absolute;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    transform: translateZ(100px); // Décalage du texte
+
+                    &_article {
+                        padding: 40px 20px 50px 20px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        text-shadow: 3px 3px 5px rgb(1, 65, 83);
+
+                        &_button_icone_texte {
+                            display: flex;
+                            width: auto;
+                            align-items: center;
+                            margin-top: 5vh;
+                           
+                           
+                            padding: 10px 20px 10px 20px;
+                            background: $bg-Text;
+                            @include box-shadow;
+                            border-radius: 20px;
+                            font-weight: bold;
+                            
+                           
+                            
+                            img {
+                                width: 30px;
+                                height: 30px;
+                                margin-right: 5px;
+                            }
+                            &:hover {
+                                cursor: pointer;
+                                @include push;
+                            }
+
+                            &_icone {
+                                &_texte {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

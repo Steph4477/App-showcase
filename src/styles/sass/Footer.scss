@@ -1,0 +1,67 @@
+.footer {
+    width: 100%;
+    background-color: rgb(42, 42, 42);
+    
+    
+    @include for-tablet{
+        background-color: $bg-Text;
+        text-shadow: none;
+        color: black;
+    }
+    @include for-mobile{
+        background-color: $bg-Text;
+        text-shadow: none;
+        color: black;
+    }
+   
+    &_rs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding-top: 2vh;
+        
+       
+
+        &_icone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+            
+            
+            &-indeed {
+                background-color: white;
+                border-radius: 5px;
+               
+                margin-right: 10px;
+                margin-bottom: 8px;
+            }
+
+            &-linkedin {
+                color: #007BB5;
+               
+            }
+
+            &-tiktok {
+               
+                color: white;
+            }
+            &-mail{
+                margin-right: 15px;
+            }
+        }
+        
+        &_contact_mail{
+            display: flex;
+            justify-content: center;
+            
+            &_lien{
+                color: $blue;
+                font-weight: bolder;
+            }
+        }
+    }
+}

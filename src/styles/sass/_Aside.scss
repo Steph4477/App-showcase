@@ -1,0 +1,89 @@
+.aside {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+   
+    &_profil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+        border-bottom-right-radius: 25px 25px;
+        background-color: rgb(42, 42, 42);
+        @include light;
+        &_photo {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            background: linear-gradient(45deg, purple, $blue);
+            border: 2px solid $blue;
+            @include light;
+        }
+
+        &_title {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5vh;
+            color: white;
+            text-shadow: 2px 2px $blue;
+            
+        }
+    }
+
+    &_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 3vh;
+            cursor: pointer;
+            padding: 0 1rem;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                &:focus{
+                    color: white;
+                    background-color: $blue;
+                    border-radius: 25px;
+                    padding: 5px 30px 5px 30px;
+                    @include light;
+                    
+                    text-shadow: none;
+                }
+
+            }
+        }
+        &_cv {
+            a{
+            color: white;
+            font-weight: bold;
+            }
+        }
+    }
+
+    .aside_RS {
+        background-color: rgb(42, 42, 42);
+        @include light;
+        border-top-right-radius: 25px 25px;
+        &_footer {
+            transform: scale(0.8);
+
+        }
+    }
+}

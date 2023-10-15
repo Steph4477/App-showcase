@@ -1,0 +1,173 @@
+#light .aside {
+    background: $bg-Cart;
+
+    &_profil {
+        background-color: $bg-Text;
+        @include push;
+
+        &_photo {
+            background: rgb(203, 203, 252);
+            border: none;
+            @include push;
+        }
+
+        &_title {
+            color: $blue;
+            text-shadow: none;
+        }
+
+    }
+
+    &_menu {
+        ul {
+            li {
+                a {
+                    color: black;
+                    font-weight: normal;
+
+                    &:focus {
+                        color: white;
+                        @include push;
+                    }
+
+                }
+            }
+        }
+        &_cv{
+            a{
+                color: $blue;
+                font-style: italic;
+                
+                
+            }
+        }
+    }
+
+    &_RS {
+        background-color: $bg-Text;
+        @include push;
+    }
+}
+
+#light .homeDesk {
+    color: black;
+
+    &_text {
+        background-color: $bg-Text;
+        @include push;
+    }
+
+    &::after,
+    &::before {
+        background: linear-gradient(white, white, white);
+    }
+
+    &_citation {
+        background-color: $bg-Text;
+        text-shadow: none;
+        @include push;
+    }
+}
+
+#light .label_text1,
+#light .label_text2 {
+    img {
+        filter: opacity(0);
+
+    }
+
+}
+
+#light .main_desktop {
+    background-color: $bg-Cart;
+}
+
+#light .App_switch {
+    background-color: $bg-Text;
+
+    border-radius: 15px;
+}
+
+#light .footer {
+    background-color: $bg-Text;
+    text-shadow: none;
+    color: $blue;
+    &_rs_contact_mail_lien{
+        color: $blue;
+        font-weight: bold;
+    }
+}
+
+#light .portfolio_project_carte {
+    margin-bottom: 15vh;
+
+    a {
+        background-color: $bg-Text;
+        color: black;
+        @include box-shadow;
+        &:hover{
+            @include push;
+            background-color: $blue;
+            color: white;
+        }
+    }
+
+    &_image {
+        img {
+            -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+            @include push;
+        }
+
+        &_content {
+            p {
+                color: black;
+            }
+            a {
+                color: black;
+                @include box-shadow;
+                &:hover{
+                    @include push;
+                    background-color: $blue;
+                    color: white;
+                }
+                img{
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+#light .about {
+    background-color: $bg-Cart;
+    color: black;
+}
+
+#light .toggle {
+    background-color: $bg-Text;
+    border: none;
+    @include push;
+}
+
+.App {
+    position: relative;
+
+    &_switch {
+        display: flex;
+        position: fixed;
+        
+      
+        z-index: 1;
+        border-radius: 15px;
+
+        @include for-tablet {
+            display: none;
+        }
+
+        @include for-mobile {
+            display: none;
+        }
+
+    }
+
+}
