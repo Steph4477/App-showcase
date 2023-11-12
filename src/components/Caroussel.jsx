@@ -21,7 +21,7 @@ const projects = [
   },
   {
     id: 1,
-    lien: "https://steph4477.github.io/ohmyfood/",
+    lien: "https://steph4477.github.io/Dynamic-site/",
     titre: "Conception d'un site web animé avec des styles CSS",
     techno: "HTML5, CSS3, Saas",
     imageRecto: ohmyfood,
@@ -29,7 +29,7 @@ const projects = [
   },
   {
     id: 2,
-    lien: "https://steph4477.github.io/la-panthere/",
+    lien: "https://steph4477.github.io/Opti-SEO/",
     titre: "Amélioration du référencement, de l'accessibilité et de la performance d'un site web existant",
     techno: "HTML5, CSS3",
     imageRecto: lapanthere,
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     id: 3,
-    lien: "https://steph4477.github.io/kasa/",
+    lien: "https://steph4477.github.io/Create-React-app/",
     titre: "Creation d'une application web de location immobilière avec React",
     techno: "React, JavaScript, JSX, HTML5, CSS3",
     imageRecto: kasa,

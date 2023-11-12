@@ -9,10 +9,10 @@ import kasa from '../assets/kasa.png';
 import kasaV from '../assets/kasaV.png';
 
 const liens = [
-  "https://steph4477.github.io/booki/",
-  "https://steph4477.github.io/ohmyfood/",
-  "https://steph4477.github.io/la-panthere/",
-  "https://steph4477.github.io/kasa"
+  "https://steph4477.github.io/Mockup-integration/",
+  "https://steph4477.github.io/Dynamic-site/",
+  "https://steph4477.github.io/Opti-SEO/",
+  "https://steph4477.github.io/Create-React-app/"
 ];
 
 const titres = [

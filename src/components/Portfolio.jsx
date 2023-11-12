@@ -14,34 +14,34 @@ const projects = [
     image: booki,
     title: "Booki",
     techno: "HTML5, CSS3",
-    lien2: "https://steph4477.github.io/Mockup-integration/"
+    lien2: "https://github.com/Steph4477/Mockup-integration/"
   },
   {
     id: 1,
-    lien: "https://steph4477.github.io/ohmyfood/",
+    lien: "https://steph4477.github.io/Dynamic-site/",
     content: "Conception d'un site web animé avec des styles CSS",
     image: ohmyfood,
     title: "OhmyFood",
     techno: "HTML5, CSS3, Saas",
-    lien2: "https://github.com/Steph4477/ohmyfood",
+    lien2: "https://github.com/Steph4477/Dynamic-site/",
   },
   {
     id: 2,
-    lien: "https://steph4477.github.io/la-panthere/",
+    lien: "https://steph4477.github.io/Opti-SEO/",
     content: "Amélioration du référencement, de l'accessibilité et de la performance d'un site web existant",
     image: lapanthere,
     title: "La Panthère",
     techno: "HTML5, CSS3",
-    lien2: "https://github.com/Steph4477/la-panthere"
+    lien2: "https://github.com/Steph4477/Opti-SEO/"
   },
   {
     id: 3,
-    lien: "https://steph4477.github.io/kasa/",
+    lien: "https://steph4477.github.io/Create-React-app/",
     content: "Creation d'une application web de location immobilière avec React",
     image: kasa,
     title: "kasa",
     techno: "React, JavaScript, JSX, HTML5, CSS3",
-    lien2: "https://github.com/Steph4477/kasa"
+    lien2: "https://github.com/Steph4477/Create-React-app/"
 
   }
 
