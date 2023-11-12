@@ -9,12 +9,12 @@ import kasa from '../assets/kasa.png';
 const projects = [
   {
     id: 0,
-    lien: "https://steph4477.github.io/booki/",
+    lien: "https://steph4477.github.io/Mockup-integration/",
     content: "Intégration d'un design de site web adaptable (responsive)",
     image: booki,
     title: "Booki",
     techno: "HTML5, CSS3",
-    lien2: "https://github.com/Steph4477/booki"
+    lien2: "https://steph4477.github.io/Mockup-integration/"
   },
   {
     id: 1,

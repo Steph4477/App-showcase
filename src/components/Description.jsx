@@ -41,12 +41,7 @@ export default function Description() {
           Merci de prendre le temps de consulter mon portfolio.
           <br />
           <br />
-          Je suis un développeur web passionné par les nouvelles technologies et la programmation,
-          spécialisé dans le développement front-end avec des compétences en back-end et bases de données.
-          <br />
-          <br />
-          Mon objectif est de créer des sites web modernes, fonctionnels et accessibles en utilisant principalement les technologies :
-          <br />
+          Actuellement en formation pour devenir Concepteur Développeur d'Applications Java chez Simplon, en CDD tremplin avec DSI entreprise adaptée.         
         </p>
       </div>
       <div className="skillsWord">

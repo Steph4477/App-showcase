@@ -13,7 +13,7 @@ import kasaV from '../assets/kasaV.png';
 const projects = [
   {
     id: 0,
-    lien: "https://steph4477.github.io/booki/",
+    lien: "https://steph4477.github.io/Mockup-integration/",
     titre: "Intégration d'un design de site web adaptable (responsive)",
     techno: "HTML5, CSS3",
     imageRecto: booki,

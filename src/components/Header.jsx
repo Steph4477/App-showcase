@@ -1,6 +1,7 @@
 import phone from '../assets/phone.svg';
 import mail from '../assets/mail.svg';
-
+import cv from '../assets/cv.pdf';
+import download from '../assets/télécharger.png'
 export default function Header(){
     return (
         <header className="header">
@@ -13,6 +14,10 @@ export default function Header(){
                     <div className="header_nav_contact_mail">
                         <img src={mail} className="fas fa-envelope header_nav_contact_mail_icone" alt="icone mail"/>
                         <a href="mailto:morelstephane4026@neuf.fr" className="header_nav_contact_mail_lien" title="boîte mail">Contactez-moi</a>
+                    </div>
+                    <div className="header_nav_contact_cv">
+                        <img src={download} className="fas fa-envelope header_nav_contact_cv_icone" alt="Mon cv"/>
+                        <a href={cv} className="header_nav_contact_cv_lien" title="boîte mail" download>Mon CV</a>
                     </div>
                 </div>
             </section>

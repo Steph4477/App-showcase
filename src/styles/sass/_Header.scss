@@ -58,6 +58,7 @@
 
                 &_icone {
                     margin-right: 1vh;
+                    margin-left: -2vh;
                 }
             }
 
@@ -89,6 +90,52 @@
 
                     @include for-mobile {
                         width: 28px;
+                    }
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                &_lien {
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            &_cv {
+                margin-top: 2vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include box-shadow;
+                background: $bg-Text;
+                border: 1px solid white;
+                border-radius: 20px;
+                width: 200px;
+                height: 40px;
+
+                @include for-mobile {
+                    height: 30px;
+                    width: 150px;
+                }
+
+                &:hover {
+                    @include push;
+                }
+
+                &_icone {
+                    margin-right: 1vh;
+                    text-align: center;
+                    margin-left: -6vh;
+                    rotate: 180deg;
+                    width: 30px;
+
+
+                    @include for-mobile {
+                        width: 25px;
+                        margin-left: -5vh;
                     }
 
                     &:hover {

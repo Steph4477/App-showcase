@@ -10,16 +10,16 @@ export default function CarteDeVisite() {
                 <section className="CarteDeVisite_container_carte_recto">
                     <div className="CarteDeVisite_container_carte_recto_fond"></div>
                     <div className="CarteDeVisite_container_carte_recto_contenu">
-                        
+
                         <article className="CarteDeVisite_container_carte_recto_contenu_article">
-                            
+
                             <div className="CarteDeVisite_container_carte_recto_contenu_article_image">
                                 <img src={photo} alt="Stéphane Morel" />
                             </div>
 
                             <div className="CarteDeVisite_container_carte_recto_contenu_article_texte">
                                 <h1 className="CarteDeVisite_container_carte_recto_contenu_article_texte_titre">Stéphane Morel</h1>
-                                <h2 className="CarteDeVisite_container_carte_recto_contenu_article_texte_nom">Intégrateur, développeur web</h2>
+                                <h2 className="CarteDeVisite_container_carte_recto_contenu_article_texte_nom">Développeur Web Junior</h2>
                             </div>
 
                         </article>
@@ -38,19 +38,17 @@ export default function CarteDeVisite() {
                     <div className="CarteDeVisite_container_carte_verso_fond"></div>
                     <div className="CarteDeVisite_container_carte_verso_contenu">
                         <article className="CarteDeVisite_container_carte_verso_contenu_article">
-                            <p>Je réalise ce projet dans le but de simplifier ma recherche d'emploi ou d'alternance.
-                                <br />
-                                <br />
-
-                                Vous pouvez voir le code de mes projets réalisés en cliquant sur le bouton.</p>
-
+                            <p>Mon objectif est de continuer à progresser dans le dev.</p>
+                            <br />
+                            <p>Grâce à ma passion pour et à ma détermination, je suis prêt à relever de nouveaux défis et à repousser les limites de mes compétences.</p>
+                            <br />
                             <div className="CarteDeVisite_container_carte_verso_contenu_article_button">
                                 <button className="CarteDeVisite_container_carte_verso_contenu_article_button_icone">
 
-                                    
+
                                     <a className="CarteDeVisite_container_carte_verso_contenu_article_button_icone_texte" href="https://github.com/Steph4477">
                                         <img src={git} alt="icone github" />
-                                         GitHub
+                                        GitHub
                                     </a>
                                 </button>
                             </div>

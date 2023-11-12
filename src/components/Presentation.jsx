@@ -52,7 +52,7 @@ export default function Presentation() {
                 </div>
               ))}
             </div>
-            J'habite à Nantes, <br/>disponible en <br />full-remote.
+            J'habite à Nantes.
           </div>
         </div>
       )}
