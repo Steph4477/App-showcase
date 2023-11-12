@@ -1,6 +1,8 @@
 @import '../variables';
 @import '../mixins';
-
+strong {
+    font-size: 20px;
+}
 .CarteDeVisite {
     display: none;
 
