@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/App-showcase/static/css/main.40a415c2.css",
-    "main.js": "/App-showcase/static/js/main.4504927d.js",
+    "main.css": "/App-showcase/static/css/main.906222f2.css",
+    "main.js": "/App-showcase/static/js/main.4747a44e.js",
     "static/js/787.c1112931.chunk.js": "/App-showcase/static/js/787.c1112931.chunk.js",
     "static/media/monkey.mp4": "/App-showcase/static/media/monkey.add9063b1bde96d7dd74.mp4",
     "static/media/kasa.png": "/App-showcase/static/media/kasa.d563691016f74928ea41.png",
@@ -34,12 +34,12 @@
     "static/media/figma.svg": "/App-showcase/static/media/figma.44ca2c329ade686d78f62ad73790c621.svg",
     "static/media/indeed.svg": "/App-showcase/static/media/indeed.cd1334df8231e0676be99afe358142c3.svg",
     "static/media/office.svg": "/App-showcase/static/media/office.c9dbbe217921ad444ebf4be547273f01.svg",
-    "main.40a415c2.css.map": "/App-showcase/static/css/main.40a415c2.css.map",
-    "main.4504927d.js.map": "/App-showcase/static/js/main.4504927d.js.map",
+    "main.906222f2.css.map": "/App-showcase/static/css/main.906222f2.css.map",
+    "main.4747a44e.js.map": "/App-showcase/static/js/main.4747a44e.js.map",
     "787.c1112931.chunk.js.map": "/App-showcase/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40a415c2.css",
-    "static/js/main.4504927d.js"
+    "static/css/main.906222f2.css",
+    "static/js/main.4747a44e.js"
   ]
 }
