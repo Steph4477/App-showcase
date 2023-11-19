@@ -117,6 +117,53 @@
                 height: 40px;
 
                 @include for-mobile {
+                    text-align: center;
+                    height: 30px;
+                    width: 150px;
+                }
+
+                &:hover {
+                    @include push;
+                }
+
+                &_icone {
+                    margin-right: 2vh;
+                  
+                    rotate: 180deg;
+                    width: 30px;
+
+
+                    @include for-mobile {
+                        width: 25px;
+                        margin-left: -8vh;
+                    }
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                &_lien {
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+            } &_github {
+                margin-top: 2vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include box-shadow;
+                background: $bg-Text;
+                border: 1px solid white;
+                border-radius: 20px;
+                width: 200px;
+                height: 40px;
+
+                @include for-mobile {
+                    text-align: center;
                     height: 30px;
                     width: 150px;
                 }
@@ -135,7 +182,7 @@
 
                     @include for-mobile {
                         width: 25px;
-                        margin-left: -5vh;
+                       
                     }
 
                     &:hover {

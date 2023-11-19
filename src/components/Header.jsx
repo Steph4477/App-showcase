@@ -2,6 +2,9 @@ import phone from '../assets/phone.svg';
 import mail from '../assets/mail.svg';
 import cv from '../assets/cv.pdf';
 import download from '../assets/télécharger.png'
+import git from '../assets/git.svg';
+
+
 export default function Header(){
     return (
         <header className="header">
@@ -17,8 +20,13 @@ export default function Header(){
                     </div>
                     <div className="header_nav_contact_cv">
                         <img src={download} className="fas fa-envelope header_nav_contact_cv_icone" alt="Mon cv"/>
-                        <a href={cv} className="header_nav_contact_cv_lien" title="boîte mail" download>Mon CV</a>
+                        <a href={cv} className="header_nav_contact_cv_lien" title="boîte mail" download>CV</a>
                     </div>
+                    <div className="header_nav_contact_github">
+                        <img src={git} className="fas fa-envelope header_nav_contact_github_icone" alt="Mon github"/>
+                        <a href="https://github.com/Steph4477?tab=repositories" className="header_nav_contact_github_lien" title="boîte mail" download>GitHub</a>
+                    </div>
+                    
                 </div>
             </section>
         </header>

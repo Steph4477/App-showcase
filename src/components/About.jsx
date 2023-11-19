@@ -7,7 +7,7 @@ export default function About() {
     <section className="about" id="about">
       <div className="about_text">
         <h2>À propos,</h2>
-        <h3>Après 20 ans dans la grande distribution et une expérience en management ...</h3>
+        <h3>Après 15 ans dans la grande distribution et une expérience en management ...</h3>
         < br/>
         < br/>
         <p>Suite à un accident de travail qui m'a empêché de poursuivre ma carrière au poste de directeur de centre de profit.</p>

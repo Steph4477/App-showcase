@@ -19,7 +19,7 @@ export default function CarteDeVisite() {
 
                             <div className="CarteDeVisite_container_carte_recto_contenu_article_texte">
                                 <h1 className="CarteDeVisite_container_carte_recto_contenu_article_texte_titre">Stéphane Morel</h1>
-                                <h2 className="CarteDeVisite_container_carte_recto_contenu_article_texte_nom">Développeur Web Junior</h2>
+                                <h2 className="CarteDeVisite_container_carte_recto_contenu_article_texte_nom">Développeur Web </h2>
                             </div>
 
                         </article>
